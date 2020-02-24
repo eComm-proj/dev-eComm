@@ -1,0 +1,9 @@
+docker build -t name:version .
+docker run -t -d imageid
+docker exec -it containerid /bin/bash
+
+docker rm containerid --> To remove container
+docker rmi -f imageid --> To remove images
+
+
+COPY test.txt(source) /test/test.txt(destination on image)
