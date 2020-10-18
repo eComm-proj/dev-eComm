@@ -1,0 +1,14 @@
+#app:
+#    build:
+#      context: app
+#      dockerfile: Dockerfile
+#version: "1.0"
+services:
+  webapp:
+    build: #.
+      context: ./dir
+      dockerfile: Dockerfile
+    ports:
+     - "5000:5000"
+  redis:
+    image: "redis:alpine"
